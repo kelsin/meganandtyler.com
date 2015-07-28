@@ -1,5 +1,5 @@
 (function(){
-  angular.module('MeganAndTyler', ['ngRoute']);
+  angular.module('MeganAndTyler', ['ngAnimate', 'ngRoute']);
 
   // Config
   angular.module('MeganAndTyler').config(function($routeProvider, $locationProvider){
