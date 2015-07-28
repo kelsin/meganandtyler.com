@@ -1,25 +1,22 @@
+mixin member(person)
+  dt= person.title
+  dd= person.name
+  if person.description
+    dd.description= person.description
+
 h2 Meet the Wedding Party
 
 h3 Wedding Party
 dl.party
   for person in page.metadata.party
-    dt= person.title
-    dd= person.name
-    if person.description
-      dd.description= person.description
+    +member(person)
 
 h3 Family of the Bride
 dl.bride
   for person in page.metadata.family.bride
-    dt= person.title
-    dd= person.name
-    if person.description
-      dd.description= person.description
+    +member(person)
 
 h3 Family of the Groom
 dl.bride
   for person in page.metadata.family.groom
-    dt= person.title
-    dd= person.name
-    if person.description
-      dd.description= person.description
+    +member(person)
