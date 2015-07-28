@@ -6,6 +6,8 @@
       .when('/about', { templateUrl: 'about.html' })
       .when('/party', { templateUrl: 'party.html' })
       .when('/rsvp', { templateUrl: 'rsvp.html' })
+      .when('/registry', { templateUrl: 'registry.html' })
+      .when('/information', { templateUrl: 'information.html' })
       .when('/', { templateUrl: 'home.html' })
       .otherwise({ redirectTo: '/' });
   });
