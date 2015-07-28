@@ -1,6 +1,11 @@
 {
   "locals": {
-    "title": "Megan & Tyler"
+    "title": "Megan & Tyler",
+    "date": {
+      "verbose": "April 3rd, 2016",
+      "short": "4/3/2016",
+      "noFormatting": "April 3 2016"
+    }
   },
   "plugins": [
     "wintersmith-less"
