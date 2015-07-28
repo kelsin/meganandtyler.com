@@ -3,6 +3,19 @@ html(lang='en')
   head
     meta(charset='utf-8')
     title= locals.title
-  body
-    h1= page.title
-    != page.html
+    link(rel='stylesheet', href='/css/megan-and-tyler.css')
+    script(src='//use.typekit.net/lms7zvf.js')
+    script try{Typekit.load();}catch(e){}
+    script(src='https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js')
+    script(src='https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular-route.min.js')
+    script(src='/scripts/scripts.js')
+  body(ng-app="MeganAndTyler")
+    header.main-header#header
+      h1= locals.title
+      ul
+        li
+          a(href="/") Home
+        li
+          a(href="/#/about") About
+    section.content(ng-view)
+      
