@@ -1,0 +1,50 @@
+{
+  "template": "party.jade",
+  "family": {
+    "bride": [{
+      "title": "Parents of the Bride",
+      "name": "Thomas and Jeanne Giroir"
+    },{
+      "title": "Brother of the Bride",
+      "name": "Christopher Giroir"
+    },{
+      "title": "Grandfather of the Bride",
+      "name": "Stuart Tears"
+    }],
+    "groom": [{
+      "title": "Parents of the Groom",
+      "name": "Stephen and Elizabeth Bristol"
+    },{
+      "title": "Brother of the Groom",
+      "name": "Christopher Bristol"
+    },{
+      "title": "Grandmother of the Groom",
+      "name": "Margaret (Babi) Gaa"
+    }]
+  },
+  "party": [{
+    "title": "Matron of Honor",
+    "name": "Katlynn Ray",
+    "description": "Megan and Katlynn originally met at a Pittsburgh Ballet Theater summer intensive. They hit it off when they both joined Ballet Theater of Maryland in the summer of 2007. They have been friends for many years and Megan had the pleasure of being a bridesmaid in Katlynn’s wedding to her husband, Jason Ray, in May 2014."
+  },{
+    "title": "Maid of Honor",
+    "name": "Lynne Bellinger",
+    "description": "Lynne joined The Ballet Theater of Maryland one year after Megan and Katlynn did. They quickly became friends and bonded over the trials and tribulations of being unpaid apprentices. Lynne is still dancing with The Ballet Theater of Maryland in Annapolis."
+  },{
+    "title": "Best Man",
+    "name": "Jeff Underwood",
+    "description": "Surface Warrior, roommate at the Naval Academy, and all-around Patriot."
+  },{
+    "title": "Groomsmen",
+    "name": "Trevor Hall",
+    "description": "Roommate at the Naval Academy for 3.5 years.  Currently serving his country in lovely 29 Palms with the Marine Corps."
+  },{
+    "title": "Groomsmen",
+    "name": "Jon Luetkenhoelter",
+    "description": "Served onboard the USS Jefferson City.  Bonded in Guam over WESTPAC 2014 deployment and soaked up some cosmic rays on the beaches of O’ahu."
+  },{
+    "title": "Flower Girl",
+    "name": "Kerrigan Giroir",
+    "description": "Megan's Niece"
+  }]
+}
