@@ -209,6 +209,7 @@ h1:hover a {
 }
 .main-header {
   padding: 40px 1em;
+  overflow: hidden;
 }
 .main-header h1 {
   text-align: center;
