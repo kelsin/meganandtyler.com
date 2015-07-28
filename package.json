@@ -17,6 +17,7 @@
   },
   "homepage": "https://www.meganandtyler.com/",
   "dependencies": {
+    "run-wintersmith": "0.0.3",
     "wintersmith": "^2.2.1",
     "wintersmith-less": "^0.2.3"
   }
