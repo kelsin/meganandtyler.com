@@ -23,7 +23,7 @@ h1 { font-family: 'proxima-nova-alt-ext-cond', sans-serif; text-transform: upper
   }
 }
 
-.main-header { padding: 40px 1em;
+.main-header { padding: 40px 1em; overflow: hidden;
   h1 { text-align: center; margin: 0; line-height: 1; }
   p.date { margin: 0; line-height: 1; text-align: center; font-family: 'proxima-nova-alt-ext-cond', sans-serif;  text-transform: uppercase; font-size: 40px; font-weight: 100;}
 }
@@ -31,3 +31,9 @@ h1 { font-family: 'proxima-nova-alt-ext-cond', sans-serif; text-transform: upper
   a { color: @navy; text-decoration: none; }
 }
 .content { padding: 0 1em; }
+
+.colorblock { width: 50px; height: 50px; display: inline-block;
+  &.pink { background-color: @pink; }
+  &.navy { background-color: @navy; }
+  &.blue { background-color: @blue; }
+}
