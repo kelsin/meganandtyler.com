@@ -1,3 +1,26 @@
 h2 RSVP
 
-!= page.html
+form(ng-submit="submit()")
+  div
+    label(for="email") Email
+    input#email(type="email" ng-model="email" placeholder="example@gmail.com")
+
+  div
+    label(for="guests") Guests
+    input#guests(type="text" ng-model="guests")
+
+  div
+    label(for="names") Names
+    textarea#names(ng-model="names")
+
+  div
+    label(for="song_requests") Song Requests
+    textarea#song_requests(ng-model="song_requests")
+
+  div
+    label(for="names") Allergies or Restrictions
+    textarea#allergies(ng-model="allergies")
+
+  div
+    input#gotcha(type="text" ng-model="gotcha" style="display:none;")
+    input#submit(type="submit")
