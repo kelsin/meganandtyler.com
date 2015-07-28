@@ -1,0 +1,18 @@
+{
+  "name": "meganandtyler.com",
+  "version": "1.0.0",
+  "description": "Megan and Tyler's wedding site",
+  "devDependencies": {
+    "gulp": "^3.9.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:kelsin/meganandtyler.com.git"
+  },
+  "author": "Christopher Giroir <kelsin@valefor.com> (http://mx.kelsin.net)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kelsin/meganandtyler.com/issues"
+  },
+  "homepage": "https://www.meganandtyler.com/"
+}
