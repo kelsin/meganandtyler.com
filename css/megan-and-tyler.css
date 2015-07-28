@@ -180,9 +180,54 @@ td,
 th {
   padding: 0;
 }
+body {
+  background: #dedede;
+  color: #141f3d;
+  font-family: 'Open Sans', sans-serif;
+}
 h1 {
   font-family: 'proxima-nova-alt-ext-cond', sans-serif;
   text-transform: uppercase;
   font-size: 72px;
   font-weight: 100;
+  letter-spacing: -3px;
+  -webkit-transition: color 0.25s, transform 0.25s, letter-spacing 0.25s;
+  -moz-transition: color 0.25s, transform 0.25s, letter-spacing 0.25s;
+  -o-transition: color 0.25s, transform 0.25s, letter-spacing 0.25s;
+  transition: color 0.25s, transform 0.25s, letter-spacing 0.25s;
+}
+h1 a {
+  text-decoration: none;
+  color: #141f3d;
+}
+h1:hover {
+  transform: scale(1.05);
+  letter-spacing: 0;
+}
+h1:hover a {
+  color: #e4aeae;
+}
+.main-header {
+  padding: 40px 1em;
+}
+.main-header h1 {
+  text-align: center;
+  margin: 0;
+  line-height: 1;
+}
+.main-header p.date {
+  margin: 0;
+  line-height: 1;
+  text-align: center;
+  font-family: 'proxima-nova-alt-ext-cond', sans-serif;
+  text-transform: uppercase;
+  font-size: 40px;
+  font-weight: 100;
+}
+.main-nav a {
+  color: #141f3d;
+  text-decoration: none;
+}
+.content {
+  padding: 0 1em;
 }
