@@ -231,3 +231,17 @@ h1:hover a {
 .content {
   padding: 0 1em;
 }
+.colorblock {
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+}
+.colorblock.pink {
+  background-color: #e4aeae;
+}
+.colorblock.navy {
+  background-color: #141f3d;
+}
+.colorblock.blue {
+  background-color: #b9e0f7;
+}
