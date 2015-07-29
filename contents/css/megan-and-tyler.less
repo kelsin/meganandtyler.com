@@ -13,26 +13,49 @@
   transition: @props;
 }
 
-body { background: #dedede; color: @navy; font-family: 'Open Sans', sans-serif; }
+body {
+  // background-color: @grey;
+  color: @navy; font-family: 'Open Sans', sans-serif;
+  position: relative;
+  overflow: hidden;
+}
 
-h1 { font-family: 'proxima-nova-alt-ext-cond', sans-serif; text-transform: uppercase; font-size: 72px; font-weight: 100; letter-spacing: -3px; .transition(color 0.25s, transform 0.25s, letter-spacing 0.25s);
-  a { text-decoration: none; color: @navy;
-  }
-  &:hover { transform: scale(1.05);letter-spacing: 0;
+body:before {
+  content: "";
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  top: -225px;
+  left: -180px;
+  z-index: -1;
+  background: url('/images/knot.svg') 0 0 no-repeat;
+  transform: rotate(-30deg);
+}
+
+h1 {
+  font-family: 'proxima-nova-alt-ext-cond', sans-serif;
+  text-transform: uppercase; font-size: 72px; font-weight: 100; letter-spacing: -3px;
+  .transition(color 0.25s, transform 0.25s, letter-spacing 0.25s);
+
+  a { text-decoration: none; color: @navy; }
+  &:hover {
+    transform: scale(1.05);letter-spacing: 0;
     a {color: @pink;}
   }
 }
 
-.main-header { padding: 40px 1em; overflow: hidden;
-  h1 { text-align: center; margin: 0; line-height: 1; }
-  p.date { margin: 0; line-height: 1; text-align: center; font-family: 'proxima-nova-alt-ext-cond', sans-serif;  text-transform: uppercase; font-size: 40px; font-weight: 100;}
+.main-header {
+  padding: 40px 1em; overflow: hidden;
+  h1 { text-align: left; margin: 0 0 0 250px; line-height: 1; }
+  p.date { margin: 0 0 0 252px; line-height: 1; text-align: left; font-family: 'proxima-nova-alt-ext-cond', sans-serif;  text-transform: uppercase; font-size: 40px; font-weight: 100;}
 }
 .main-nav {
   a { color: @navy; text-decoration: none; }
 }
 .content { padding: 0 1em; }
 
-.colorblock { width: 50px; height: 50px; display: inline-block;
+.colorblock {
+  width: 50px; height: 50px; display: inline-block;
   &.pink { background-color: @pink; }
   &.navy { background-color: @navy; }
   &.blue { background-color: @blue; }
