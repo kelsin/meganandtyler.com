@@ -242,7 +242,12 @@ h1:hover a {
   text-decoration: none;
 }
 .content {
-  padding: 0 1em;
+  width: 800px;
+  padding: 1em;
+  margin: 1em 250px;
+  background: #b9e0f7;
+  border-radius: 5px;
+  box-shadow: 3px 3px 8px #141f3d;
 }
 .colorblock {
   width: 50px;
