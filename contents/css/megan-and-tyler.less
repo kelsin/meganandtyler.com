@@ -17,7 +17,6 @@ body {
   // background-color: @grey;
   color: @navy; font-family: 'Open Sans', sans-serif;
   position: relative;
-  overflow: hidden;
 }
 
 body:before {
@@ -32,28 +31,68 @@ body:before {
   transform: rotate(-30deg);
 }
 
+a:visited, a:active { color: @navy; }
+
+header {
+  a, a:visited, a:active { text-decoration: none; }
+
+  h1 {
+    letter-spacing: -3px;
+    .transition(letter-spacing 0.25s);
+
+    &:hover { letter-spacing: 0; }
+  }
+}
+
 h1 {
   font-family: 'proxima-nova-alt-ext-cond', sans-serif;
-  text-transform: uppercase; font-size: 72px; font-weight: 100; letter-spacing: -3px;
+  text-transform: uppercase; font-size: 72px; font-weight: 100;
   .transition(color 0.25s, transform 0.25s, letter-spacing 0.25s);
 
-  a { text-decoration: none; color: @navy; }
-  &:hover {
-    transform: scale(1.05);letter-spacing: 0;
-    a {color: @pink;}
+  a {
+    text-decoration: none; color: @navy;
+    letter-spacing: -3px;
+    .transition(color 0.25s, transform 0.25s, letter-spacing 0.25s);
+    &:hover { letter-spacing: 0; }
   }
 }
 
 .main-header {
-  padding: 40px 1em; overflow: hidden;
-  h1 { text-align: left; margin: 0 0 0 250px; line-height: 1; }
-  p.date { margin: 0 0 0 252px; line-height: 1; text-align: left; font-family: 'proxima-nova-alt-ext-cond', sans-serif;  text-transform: uppercase; font-size: 40px; font-weight: 100;}
+  padding: 35px 0 0 0; margin: 0 0 0 280px; overflow: hidden;
+  h1 { text-align: left; margin: 0; line-height: 1; }
+  p.date { margin: 0; line-height: 1; text-align: left; font-family: 'proxima-nova-alt-ext-cond', sans-serif;  text-transform: uppercase; font-size: 40px; font-weight: 100;}
 }
 .main-nav {
+  ul {
+    overflow: auto;
+    margin: 1em 0 1em 0; list-style: none; padding: 0;
+
+    li {
+      float: left;
+      padding: 0 2em 0 0;
+
+      &:after {
+        content: '';
+        background: url('/images/knot.svg') -10px -4px no-repeat;
+        background-size: 50px 25px;
+        height: 25px;
+        width: 30px;
+        position: absolute;
+      }
+
+      &:last-child:after {
+        display: none;
+      }
+
+      a:hover { text-decoration: underline; }
+    }
+  }
   a { color: @navy; text-decoration: none; }
 }
 .content {
-  width: 800px; padding: 1em; margin: 1em 250px;
+  h2 { margin: 0; }
+  p { margin: 0 0 0.75em 0; }
+  width: 800px; padding: 20px; margin: 20px 260px;
   background: @blue;
   border-radius: 5px;
   box-shadow: 3px 3px 8px @navy;

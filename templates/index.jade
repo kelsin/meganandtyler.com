@@ -15,16 +15,15 @@ html(lang='en')
   body(ng-app="MeganAndTyler")
     header.main-header#header
       h1
-        a(href="/")= locals.title
-      p.date #{locals.date.noFormatting}
+        a(href="/#/")= locals.title
+      p.date
+        a(href="/#/")= locals.date.noFormatting
       nav.main-nav
         ul
           li
-            a(href="/#/") Home
-          li
             a(href="/#/about") About
           li
-            a(href="/#/party") Meet the Bridal Party
+            a(href="/#/party") Wedding Party
           li
             a(href="/#/rsvp") RSVP
           li
