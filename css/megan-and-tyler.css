@@ -184,7 +184,6 @@ body {
   color: #141f3d;
   font-family: 'Open Sans', sans-serif;
   position: relative;
-  overflow: hidden;
 }
 body:before {
   content: "";
@@ -197,12 +196,30 @@ body:before {
   background: url('/images/knot.svg') 0 0 no-repeat;
   transform: rotate(-30deg);
 }
+a:visited,
+a:active {
+  color: #141f3d;
+}
+header a,
+header a:visited,
+header a:active {
+  text-decoration: none;
+}
+header h1 {
+  letter-spacing: -3px;
+  -webkit-transition: letter-spacing, 0.25s;
+  -moz-transition: letter-spacing, 0.25s;
+  -o-transition: letter-spacing, 0.25s;
+  transition: letter-spacing, 0.25s;
+}
+header h1:hover {
+  letter-spacing: 0;
+}
 h1 {
   font-family: 'proxima-nova-alt-ext-cond', sans-serif;
   text-transform: uppercase;
   font-size: 72px;
   font-weight: 100;
-  letter-spacing: -3px;
   -webkit-transition: color 0.25s, transform 0.25s, letter-spacing 0.25s;
   -moz-transition: color 0.25s, transform 0.25s, letter-spacing 0.25s;
   -o-transition: color 0.25s, transform 0.25s, letter-spacing 0.25s;
@@ -211,25 +228,27 @@ h1 {
 h1 a {
   text-decoration: none;
   color: #141f3d;
+  letter-spacing: -3px;
+  -webkit-transition: color 0.25s, transform 0.25s, letter-spacing 0.25s;
+  -moz-transition: color 0.25s, transform 0.25s, letter-spacing 0.25s;
+  -o-transition: color 0.25s, transform 0.25s, letter-spacing 0.25s;
+  transition: color 0.25s, transform 0.25s, letter-spacing 0.25s;
 }
-h1:hover {
-  transform: scale(1.05);
+h1 a:hover {
   letter-spacing: 0;
 }
-h1:hover a {
-  color: #e4aeae;
-}
 .main-header {
-  padding: 40px 1em;
+  padding: 35px 0 0 0;
+  margin: 0 0 0 280px;
   overflow: hidden;
 }
 .main-header h1 {
   text-align: left;
-  margin: 0 0 0 250px;
+  margin: 0;
   line-height: 1;
 }
 .main-header p.date {
-  margin: 0 0 0 252px;
+  margin: 0;
   line-height: 1;
   text-align: left;
   font-family: 'proxima-nova-alt-ext-cond', sans-serif;
@@ -237,17 +256,47 @@ h1:hover a {
   font-size: 40px;
   font-weight: 100;
 }
+.main-nav ul {
+  overflow: auto;
+  margin: 1em 0 1em 0;
+  list-style: none;
+  padding: 0;
+}
+.main-nav ul li {
+  float: left;
+  padding: 0 2em 0 0;
+}
+.main-nav ul li:after {
+  content: '';
+  background: url('/images/knot.svg') -10px -4px no-repeat;
+  background-size: 50px 25px;
+  height: 25px;
+  width: 30px;
+  position: absolute;
+}
+.main-nav ul li:last-child:after {
+  display: none;
+}
+.main-nav ul li a:hover {
+  text-decoration: underline;
+}
 .main-nav a {
   color: #141f3d;
   text-decoration: none;
 }
 .content {
   width: 800px;
-  padding: 1em;
-  margin: 1em 250px;
+  padding: 20px;
+  margin: 20px 260px;
   background: #b9e0f7;
   border-radius: 5px;
   box-shadow: 3px 3px 8px #141f3d;
+}
+.content h2 {
+  margin: 0;
+}
+.content p {
+  margin: 0 0 0.75em 0;
 }
 .colorblock {
   width: 50px;
