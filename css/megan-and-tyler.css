@@ -196,9 +196,10 @@ body:before {
   background: url('/images/knot.svg') 0 0 no-repeat;
   transform: rotate(-30deg);
 }
+a,
 a:visited,
 a:active {
-  color: #141f3d;
+  color: #003f7f;
 }
 header a,
 header a:visited,
@@ -261,20 +262,30 @@ h1 a:hover {
   margin: 1em 0 1em 0;
   list-style: none;
   padding: 0;
+  height: 25px;
 }
 .main-nav ul li {
-  float: left;
-  padding: 0 2em 0 0;
+  display: inline-block;
+  padding: 0 0 0 30px;
+  position: relative;
 }
-.main-nav ul li:after {
-  content: '';
-  background: url('/images/knot.svg') -10px -4px no-repeat;
-  background-size: 50px 25px;
-  height: 25px;
+.main-nav ul li a {
+  display: block;
+}
+.main-nav ul li:before {
+  content: '\2022';
+  margin: 0;
+  text-align: center;
   width: 30px;
+  height: 25px;
+  top: 0;
+  left: 0;
   position: absolute;
 }
-.main-nav ul li:last-child:after {
+.main-nav ul li:first-child {
+  padding: 0;
+}
+.main-nav ul li:first-child:before {
   display: none;
 }
 .main-nav ul li a:hover {
@@ -287,16 +298,26 @@ h1 a:hover {
 .content {
   width: 800px;
   padding: 20px;
-  margin: 20px 260px;
-  background: #b9e0f7;
-  border-radius: 5px;
-  box-shadow: 3px 3px 8px #141f3d;
+  margin: 0 260px;
 }
 .content h2 {
   margin: 0;
 }
 .content p {
-  margin: 0 0 0.75em 0;
+  margin: 0 0 1em 0;
+  line-height: 1.5em;
+}
+.content h1,
+.content h2,
+.content h3,
+.content h4,
+.content h5,
+.content h6 {
+  margin-bottom: 0.35em;
+  clear: both;
+}
+.content h4 + h5 {
+  margin-top: 0;
 }
 .colorblock {
   width: 50px;
@@ -311,4 +332,65 @@ h1 a:hover {
 }
 .colorblock.blue {
   background-color: #b9e0f7;
+}
+form#rsvp div {
+  margin-bottom: 1.5em;
+  padding-bottom: 0.5em;
+  border-bottom: 1px solid #ddd;
+}
+form#rsvp div label {
+  float: left;
+  width: 150px;
+  padding: 0.4em 0;
+}
+form#rsvp div p {
+  font-size: 0.7em;
+  margin-left: 150px;
+  padding: 0 0.2em;
+  color: #555;
+}
+form#rsvp div textarea + p {
+  margin-top: -5px;
+}
+form#rsvp div input,
+form#rsvp div textarea {
+  padding: 0.3em;
+  margin: 0 0 0.2em 0;
+  width: 450px;
+}
+form#rsvp div textarea {
+  height: 100px;
+}
+form#rsvp div input#submit {
+  width: 100px;
+}
+form#rsvp div.controls {
+  padding-left: 150px;
+  border-bottom: none;
+}
+dt {
+  clear: both;
+  font-size: 0.9em;
+  margin-top: 1em;
+  padding: 0.6em 0 0 0;
+  border-top: 1px solid #ddd;
+  width: 300px;
+}
+dt:first-child {
+  border-top: none;
+  padding-top: 0;
+  margin-top: 0;
+}
+dd {
+  margin: 0;
+  font-weight: bold;
+}
+dd.description {
+  font-weight: normal;
+  font-size: 0.9em;
+  margin-bottom: 1em;
+}
+iframe {
+  float: left;
+  margin: 0 2em 2em 0;
 }
