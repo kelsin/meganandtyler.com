@@ -4,6 +4,7 @@
 @grey: #dedede;
 @pink: #e4aeae;
 @blue: #b9e0f7;
+@knot: #003f7f;
 
 .transition (...) {
   @props: ~`"@{arguments}".replace(/[\[\]]/g, '')`;
@@ -31,7 +32,7 @@ body:before {
   transform: rotate(-30deg);
 }
 
-a:visited, a:active { color: @navy; }
+a, a:visited, a:active { color: @knot; }
 
 header {
   a, a:visited, a:active { text-decoration: none; }
@@ -66,22 +67,34 @@ h1 {
   ul {
     overflow: auto;
     margin: 1em 0 1em 0; list-style: none; padding: 0;
+    height: 25px;
 
     li {
-      float: left;
-      padding: 0 2em 0 0;
+      display: inline-block;
+      padding: 0 0 0 30px;
+      position: relative;
 
-      &:after {
-        content: '';
-        background: url('/images/knot.svg') -10px -4px no-repeat;
-        background-size: 50px 25px;
-        height: 25px;
+      a {
+        display: block;
+      }
+
+      &:before {
+        content: '\2022';
+        margin: 0;
+        text-align: center;
         width: 30px;
+        height: 25px;
+        top: 0;
+        left: 0;
         position: absolute;
       }
 
-      &:last-child:after {
-        display: none;
+      &:first-child {
+        padding: 0;
+
+        &:before {
+          display: none;
+        }
       }
 
       a:hover { text-decoration: underline; }
@@ -91,11 +104,11 @@ h1 {
 }
 .content {
   h2 { margin: 0; }
-  p { margin: 0 0 0.75em 0; }
-  width: 800px; padding: 20px; margin: 20px 260px;
-  background: @blue;
-  border-radius: 5px;
-  box-shadow: 3px 3px 8px @navy;
+  p { margin: 0 0 1em 0; line-height: 1.5em; }
+  width: 800px; padding: 20px; margin: 0 260px;
+  h1, h2, h3, h4, h5, h6 { margin-bottom: 0.35em; clear: both; }
+
+  h4 + h5 { margin-top: 0; }
 }
 
 .colorblock {
@@ -103,4 +116,60 @@ h1 {
   &.pink { background-color: @pink; }
   &.navy { background-color: @navy; }
   &.blue { background-color: @blue; }
+}
+
+form#rsvp {
+  div {
+    margin-bottom: 1.5em;
+    padding-bottom: 0.5em;
+    border-bottom: 1px solid #ddd;
+
+    label { float: left; width: 150px; padding: 0.4em 0; }
+
+    p { font-size: 0.7em; margin-left: 150px; padding: 0 0.2em; color: #555; }
+
+    textarea + p { margin-top: -5px; }
+
+    input, textarea { padding: 0.3em; margin: 0 0 0.2em 0; width: 450px; }
+
+    textarea { height: 100px; }
+
+    input#submit { width: 100px; }
+
+    &.controls {
+      padding-left: 150px;
+      border-bottom: none;
+    }
+  }
+}
+
+dt {
+  clear: both;
+  font-size: 0.9em;
+  margin-top: 1em;
+  padding: 0.6em 0 0 0;
+  border-top: 1px solid #ddd;
+  width: 300px;
+
+  &:first-child {
+    border-top: none;
+    padding-top: 0;
+    margin-top: 0;
+  }
+}
+
+dd {
+  margin: 0;
+  font-weight: bold;
+
+  &.description {
+    font-weight: normal;
+    font-size: 0.9em;
+    margin-bottom: 1em;
+  }
+}
+
+iframe {
+  float: left;
+  margin: 0 2em 2em 0;
 }

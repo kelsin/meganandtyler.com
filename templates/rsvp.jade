@@ -1,26 +1,37 @@
+mixin input(label,placeholder,type)
+  - placeholder = placeholder || ''
+  - type = type || 'text'
+  - model = label.toLowerCase().replace(' ', '_')
+  div
+    label(for=model)= label
+    input(id=model type=type ng-model=model placeholder=placeholder)
+    if block
+      block
+
+mixin textarea(label, model)
+  - model = model || (label.toLowerCase().replace(' ', '_'))
+  div
+    label(for=model)= label
+    textarea(id=model ng-model=model)
+    if block
+      block
+
 h2 RSVP
 
-form(ng-submit="submit()")
-  div
-    label(for="email") Email
-    input#email(type="email" ng-model="email" placeholder="example@gmail.com")
+p Fill out the form below to email us with your RSVP data. We'll email you back if there are any questions!
 
-  div
-    label(for="guests") Guests
-    input#guests(type="text" ng-model="guests")
+form#rsvp(ng-submit="submit()")
+  +input('Email', 'example@gmail.com', 'email')
+    p In case we need to contact you!
+  +input('Guests', 'text')
+    p Number of guests that will attend
+  +textarea('Names')
+    p Names of the guests
+  +textarea('Song Requests')
+    p Do you have any song requests for our playlist?
+  +textarea('Allergies')
+    p If you have any food allergies or dietary restrictions please let us know!
 
-  div
-    label(for="names") Names
-    textarea#names(ng-model="names")
-
-  div
-    label(for="song_requests") Song Requests
-    textarea#song_requests(ng-model="song_requests")
-
-  div
-    label(for="names") Allergies or Restrictions
-    textarea#allergies(ng-model="allergies")
-
-  div
+  div.controls
     input#gotcha(type="text" ng-model="gotcha" style="display:none;")
     input#submit(type="submit")
