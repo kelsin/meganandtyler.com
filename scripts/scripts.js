@@ -10,12 +10,13 @@
       .when('/rsvp', { templateUrl: 'rsvp.html', controller: 'RsvpController' })
       .when('/registry', { templateUrl: 'registry.html' })
       .when('/information', { templateUrl: 'information.html' })
+      .when('/thanks', { templateUrl: 'thanks.html' })
       .when('/', { templateUrl: 'home.html' })
       .otherwise({ redirectTo: '/' });
   });
 
   // RSVP Controller
-  angular.module('MeganAndTyler').controller('RsvpController', function($scope, $http) {
+  angular.module('MeganAndTyler').controller('RsvpController', function($scope, $http, $location) {
 
     var init = function() {
       $scope.email = '';
@@ -49,6 +50,7 @@
       }).then(function(response) {
         // TODO: Check response to show errors
         init();
+        $location.path('/#/thanks');
       });
     };
   });
