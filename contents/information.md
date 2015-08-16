@@ -11,7 +11,8 @@ The Charleston Yacht Club is located in the City Marina in the downtown area. Ou
 [Charleston Yacht Club](http://charlestonyachtclub.com/)<br/>
 17 Lockwood Drive<br/>
 Charleston, SC 29413<br/>
-843.722.4968
+843.722.4968<br/>
+[http://charlestonyachtclub.com](http://charlestonyachtclub.com)
 
 ### Information about Hotel rooms
 
