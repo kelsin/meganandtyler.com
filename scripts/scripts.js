@@ -30,7 +30,7 @@
 
     $scope.submit = function() {
       $http({
-        url: "http://formspree.io/kelsin@valefor.com",
+        url: "http://formspree.io/megangiroir2+rsvp@gmail.com",
         data: $.param({
           email: $scope.email,
           guests: $scope.guests,
