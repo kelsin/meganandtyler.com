@@ -50,7 +50,7 @@
       }).then(function(response) {
         // TODO: Check response to show errors
         init();
-        $location.path('/#/thanks');
+        $location.path('/thanks');
       });
     };
   });
