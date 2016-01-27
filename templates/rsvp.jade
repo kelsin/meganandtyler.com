@@ -25,7 +25,9 @@ p Fill out the form below to email us with your RSVP. We'll email you back if
 form#rsvp(ng-submit="submit()")
   +input('Email', 'example@gmail.com', 'email')
     p In case we need to contact you!
-  +input('Guests', 'text')
+  +input('Attending', '', 'checkbox')
+    p Are you going to be able to attend?
+  +input('Guests', '0', 'text')
     p Number of guests that will attend
   +textarea('Names')
     p Names of the guests
