@@ -20,6 +20,7 @@
 
     var init = function() {
       $scope.email = '';
+      $scope.attending = true;
       $scope.gotcha = '';
       $scope.guests = 2;
       $scope.names = '';
@@ -34,6 +35,7 @@
         url: "http://formspree.io/megangiroir2+rsvp@gmail.com",
         data: $.param({
           email: $scope.email,
+          attending: $scope.attending,
           guests: $scope.guests,
           names: $scope.names,
           song_requests: $scope.song_requests,
