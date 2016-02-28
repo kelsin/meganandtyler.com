@@ -25,8 +25,10 @@ p Fill out the form below to email us with your RSVP. We'll email you back if
 form#rsvp(ng-submit="submit()")
   +input('Email', 'example@gmail.com', 'email')
     p In case we need to contact you!
-  +input('Attending', '', 'checkbox')
-    p Are you going to be able to attend?
+  div
+    label(for="attending") Attending
+    select(id="attending" ng-model="attending" ng-options="o.v as o.n for o in [{ n: 'Sorry, we are not able to attend', v: false }, { n: 'Yes, we will be there!', v: true }]")
+    p Are you able to come to the wedding?
   +input('Guests', '', 'text')
     p Number of guests that will attend
   +textarea('Names')
