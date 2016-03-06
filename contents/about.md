@@ -2,7 +2,7 @@
 template: about.jade
 ---
 
-[![The Happy Couple](/images/mat.10.th.jpeg)](/images/mat.10.jpeg)
+[![The Happy Couple](/images/mat.10.th.jpeg)](/images/mat.10.web.jpeg)
 
 Tyler and Megan met while in Annapolis, Maryland late in 2009 and instantly hit
 it off. Tyler was studying at the United States Naval Academy and Megan was
@@ -15,7 +15,7 @@ deployment. In March 2015, they relocated to Charleston, South Carolina.
 
 ## Tyler’s proposal story
 
-[![The Ring](/images/mat.11.th.jpeg)](/images/mat.11.jpeg)
+[![The Ring](/images/mat.11.th.jpeg)](/images/mat.11.web.jpeg)
 
 The proposal story turned out to be a much longer drawn out affair than I
 intended. After executing a change of homeport to Hawaii directly from a
@@ -30,7 +30,7 @@ up in Balboa Park over a nice picnic. For the west coasters, you know how cold
 it was right around New Years and it also decided to rain when we got up to the
 park.
 
-[![The Gaslamp District](/images/mat.12.th.jpeg)](/images/mat.12.jpeg)
+[![The Gaslamp District](/images/mat.12.th.jpeg)](/images/mat.12.web.jpeg)
 
 Time for plan B. I moved the picnic back to our apartment and after we finished
 we walked around downtown where we ended up underneath the Gaslamp Quarter sign
