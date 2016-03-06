@@ -1,4 +1,5 @@
 @import "_normalize.less";
+@import "_colorbox.less";
 
 @navy: #141f3d;
 @grey: #dedede;
@@ -172,4 +173,23 @@ dd {
 iframe {
   float: left;
   margin: 0 2em 2em 0;
+}
+
+section.content img {
+  display: block;
+  float: left;
+  margin: 0 10px 10px 0;
+}
+
+section.content img, div.photos {
+  border: 2px solid white;
+  border-radius: 5px;
+  box-shadow: 2px 2px 3px 1px #ccc;
+}
+
+section.photos-container {
+  position: absolute;
+  width: 200px;
+  left: 40px;
+  top: 230px;
 }

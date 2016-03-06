@@ -1,4 +1,17 @@
-(function(){
+(function($){
+  $(function() {
+    $('div.photos a').colorbox({
+      rel: 'photos'
+    });
+    $('div.photos').slick({
+      fade: true,
+      arrows: false,
+      dots: false,
+      autoplay: true,
+      adaptiveHeight: true
+    });
+  });
+
   angular.module('MeganAndTyler', ['ngAnimate', 'ngRoute']);
 
   // Config
@@ -57,4 +70,4 @@
     };
   });
 
-})();
+})(jQuery);

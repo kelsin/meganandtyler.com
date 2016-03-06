@@ -5,12 +5,16 @@ html(lang='en')
     title= locals.title
     link(rel='stylesheet', href='/css/megan-and-tyler.css')
     link(rel='stylesheet', href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700')
+    link(rel='stylesheet', href='//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.css')
+    link(rel='stylesheet', href='//cdn.jsdelivr.net/jquery.slick/1.5.9/slick-theme.css')
     script(src='//use.typekit.net/lms7zvf.js')
     script try{Typekit.load();}catch(e){}
     script(src='https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js')
     script(src='https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js')
     script(src='https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular-route.min.js')
     script(src='https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular-animate.min.js')
+    script(src='//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.min.js')
+    script(src='//cdnjs.cloudflare.com/ajax/libs/jquery.colorbox/1.6.3/jquery.colorbox-min.js')
     script(src='/scripts/scripts.js')
   body(ng-app="MeganAndTyler")
     header.main-header#header
@@ -32,3 +36,33 @@ html(lang='en')
             a(href="/#/information") Guest Information
 
     section.content(ng-view)
+
+    section.photos-container
+      div.photos
+        div
+          a(href="/images/mat.01.web.jpeg")
+            img(src="/images/mat.01.th.jpeg" rel="photos")
+        div
+          a(href="/images/mat.02.web.jpeg")
+            img(src="/images/mat.02.th.jpeg" rel="photos")
+        div
+          a(href="/images/mat.03.web.jpeg")
+            img(src="/images/mat.03.th.jpeg" rel="photos")
+        div
+          a(href="/images/mat.04.web.jpeg")
+            img(src="/images/mat.04.th.jpeg" rel="photos")
+        div
+          a(href="/images/mat.05.web.jpeg")
+            img(src="/images/mat.05.th.jpeg" rel="photos")
+        div
+          a(href="/images/mat.06.web.jpeg")
+            img(src="/images/mat.06.th.jpeg" rel="photos")
+        div
+          a(href="/images/mat.07.web.jpeg")
+            img(src="/images/mat.07.th.jpeg" rel="photos")
+        div
+          a(href="/images/mat.08.web.jpeg")
+            img(src="/images/mat.08.th.jpeg" rel="photos")
+        div
+          a(href="/images/mat.09.web.jpeg")
+            img(src="/images/mat.09.th.jpeg" rel="photos")
