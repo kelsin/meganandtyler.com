@@ -3,12 +3,17 @@
     $('div.photos a').colorbox({
       rel: 'photos'
     });
+    $('body').on('click', 'section.content a:has(img)', function(e) {
+      e.preventDefault();
+      $.colorbox({href:$(this).attr('href'), open:true});
+    });
     $('div.photos').slick({
       fade: true,
       arrows: false,
       dots: false,
       autoplay: true,
-      adaptiveHeight: true
+      adaptiveHeight: true,
+      cssEase: 'linear'
     });
   });
 
